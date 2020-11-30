@@ -1,0 +1,24 @@
+tests.test_E2E.MyTestClass.test_basic
+----------------------------------------------------
+Last Page: https://www.saucedemo.com/checkout-complete.html
+  Browser: chrome
+Timestamp: 1606694700  (Unix Timestamp)
+     Date: Sunday, 29 November 2020
+     Time: 9:05:00 PM  (Argentina Standard Time, UTC-03:00)
+----------------------------------------------------
+Traceback: File "C:\Users\VS531QJ\AppData\Local\Programs\Python\Python38-32\Lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\VS531QJ\AppData\Local\Programs\Python\Python38-32\Lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\VS531QJ\PycharmProjects\SeleniumBase\tests\test_E2E.py", line 20, in test_basic
+    self.assert_exact_text("THANK YOU FOR YOUR ORDERS", Page.css_13)
+  File "c:\users\vs531qj\appdata\local\programs\python\python38-32\lib\site-packages\seleniumbase\fixtures\base_case.py", line 5163, in assert_exact_text
+    self.wait_for_exact_text_visible(
+  File "c:\users\vs531qj\appdata\local\programs\python\python38-32\lib\site-packages\seleniumbase\fixtures\base_case.py", line 5096, in wait_for_exact_text_visible
+    return page_actions.wait_for_exact_text_visible(
+  File "c:\users\vs531qj\appdata\local\programs\python\python38-32\lib\site-packages\seleniumbase\fixtures\page_actions.py", line 419, in wait_for_exact_text_visible
+    timeout_exception(ElementNotVisibleException, message)
+  File "c:\users\vs531qj\appdata\local\programs\python\python38-32\lib\site-packages\seleniumbase\fixtures\page_actions.py", line 117, in timeout_exception
+    raise exc(message)
+Exception: Message: 
+ Expected exact text {THANK YOU FOR YOUR ORDERS} for {#checkout_complete_container > h2} was not visible after 6 seconds!
